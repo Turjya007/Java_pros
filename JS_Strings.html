@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Here we will learn about string operations</h1>
+        <script>
+            //to use single quote in string we can use double qoute outside
+            let text = "My name is 'Turjya'"
+            //to use double quote in string we can use single qoute outside
+            let text2 = 'My name is "Noor Arafat Turjya"'
+            //we can also use slash to use special character in string
+            let text3 = 'And I send this messege to all the \'Autobots\' all over the world'
+            //templeting the string can also be used for both single andf double quote.
+            //But its not supported in internet explorer  
+
+            let text4 = 'I am \
+            Optimus prime'; //like this we can break line
+
+            //The best use is to use + sign
+
+            let text5 = 'My name is ' +
+            'Optimus prime';
+
+            let x = "Turjya";
+            let y = new String("Turjya");
+            let z = new String("Turjya");
+
+            //One Object string and one pure string can be compared
+            //But two object string can never be compared
+
+            console.log(text2.length);
+            console.log(text);
+            console.log(text2);
+            console.log(text3);
+            console.log(text4);
+            console.log(text5);
+
+            //One Object string and one pure string can be compared
+            //But two object string can never be compared
+            
+            console.log(x==y);
+            console.log(x===y); // triple equal compares everything, its type and value also
+            console.log(y===z);
+            console.log(y==z);
+        </script>
+</body>
+</html>

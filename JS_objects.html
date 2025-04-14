@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Here we will learn about JS objects</h2>
+    <script>
+        const car = {
+            color: 'red',
+            weight: '135kg',
+            model: 501,
+            show: function(){
+                console.log('This is a super car');
+            }
+        }
+
+        console.log(car.model);
+        console.log(car.color);
+        car.show();
+
+        //We will use another funtion to use 'This' keyword
+        const truck = {
+            name: 'Mahindra',
+            weight: '300kg',
+            model: 11213,
+
+            seenw: function(){
+                let y = this.model + this.weight;
+                console.log(y);
+            }
+        }
+
+        truck.seenw();
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Here we will learn about numbers</h2>
+    <script>
+        //Javascript takes all the number as float numbers
+        //In JS we can work with extra large and extra small numbers
+
+        let a = 12e-5 ; //extra small number
+        let b = 12e6 ; // extra large number
+        let c = a+b;
+        console.log('The sumation is : ' + c);
+
+        //Javascript can read numbers upto 15 digits, but after this it may fail to read numbers accurately
+        let d = 999999999999999;
+        let e = 99999999999999999;
+
+        console.log(d);
+        console.log(e); //this one will not be printed with the exact value
+
+        //when a string and number is added, string gets the priority
+        let f = 'sumit' + 5 + 3;
+        console.log(f);
+
+        //JS reads expression from left to right and 
+        let g = 5 + 3 + 'sumit';
+        console.log(g);
+
+        //only + operator can work with string and number together while other operator fails
+
+        let h = 'Turjya' * 5;
+        console.log(h); // it gives NaN value that means 'Not a Number'
+
+        // different cases
+
+        let i = '100'/10;
+        let j = '10' + 11;
+        console.log(i); // Except the "+" JS can read numbers through the strings
+        console.log(j); // But in + operator it doesn't read numbers through strings
+
+        // JS can work with hexadecimal also
+
+        let k = 0xFF;
+        console.log('From the hexa decimal value :' + k);
+
+        let L = 40;
+        console.log(L.toString(10)); //For decimal
+        console.log(L.toString(8)); //For Octal
+        console.log(L.toString(2)); //For Binary
+        console.log(L.toString(16)); //For Hexadecimal
+
+    </script>
+</body>
+</html>

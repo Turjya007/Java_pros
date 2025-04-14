@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+
+    <script>
+        const a=5;
+        /*Const key word should get a value when it is declared.
+        const can not be re-assigned */
+
+        const arr = [1,4,2,7,6];
+        // but const array can be re-declared
+
+        console.log(arr);
+
+        arr[2] = 3;
+
+        console.log(arr); // now the array is [1,4,3,7,6], so it is re-declared
+
+        //const can be re-assigned outside of block scope
+
+        if(true)
+    {
+        const br=[1,7,8];
+        console.log(br);
+    }
+    const br=[1,5,8];
+    console.log(br);
+
+    </script>
+</body>
+</html>

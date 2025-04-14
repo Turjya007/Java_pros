@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>We will learn about string search methods</h3>
+
+    <script>
+        let tx1 = 'With a great great great power comes a great responsibilty';
+        let tx2 = tx1.indexOf('great');
+        let tx3 = tx1.lastIndexOf('great');
+        let tx4 = tx1.indexOf('great',16);
+        let tx5 = tx1.lastIndexOf('great',24);
+        let tx6 = tx1.match('eat');
+        let tx7 = tx1.includes('great');
+        let tx8 = tx1.search('power');
+
+        console.log(tx2);
+        console.log(tx3);
+        console.log(tx4);
+        console.log(tx5);
+        console.log(tx6);
+        console.log(tx7);
+        console.log(tx8);
+        console.log(tx1.startsWith('a'));
+        console.log(tx1.startsWith('With'));
+        console.log(tx1.startsWith('great',7));
+        console.log(tx1.endsWith('responsibilty'));
+        console.log(tx1.endsWith('great',12));
+    </script>
+</body>
+</html>
