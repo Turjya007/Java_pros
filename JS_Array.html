@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Here we will learn about Array</h3>
+    <h4 id="demo"></h4>
+    <p id="demo2"></p>
+
+
+    <script>
+        let arr = [1,2,5,'cars',6];//JS array can handle multiple types of data in a single array
+        let brr = [3,5,1,7,'mango',8];
+        document.getElementById("demo").innerHTML = arr;
+        let fruit = ['banana','mango','lichi','lemon','orange'];
+
+        console.log(arr[2]); // Like this we can access a specific element of an array
+        console.log(arr.length); // like this we can know the array length
+        console.log(typeof arr); // Arrays are object
+
+        brr[3] = 'Turjya'; // by doing this we can replace an element of array
+        console.log(brr); 
+
+        console.log(arr[arr.length-1]); // like this we can access the last element of array
+
+        let txt = "<ul>";
+
+        for(let i=0; i<5; i++)
+        {
+            txt = txt + "<li>"+fruit[i]+"<li>"
+        }
+
+        txt = txt + "</ul>" 
+
+        document.getElementById('demo2').innerHTML = txt;
+
+
+
+
+    </script>
+</body>
+</html>
