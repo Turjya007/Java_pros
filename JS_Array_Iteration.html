@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        here we will learn about array iteration
+    </h3>
+
+    <script>
+        let arr = [1,4,2,6,7,10,15];
+        let brr = ['banana','orange','mango','berry','lemon',]
+
+        function iter(value,index,array)
+        {
+            console.log('Value is : '+ value);
+            console.log('Index is : '+ index);
+            console.log('Array is : '+ array);
+            console.log('--------------------')
+        }
+        brr.forEach(iter);
+
+        function iter2(value)
+        {
+            value = value * 3;
+            return value;
+        }
+
+        newarr = arr.map(iter2);
+        console.log(newarr);
+
+        function iter3(value)
+        {
+            if(value>5)
+        {
+            return value;
+        }
+        }
+
+        arr2 = arr.filter(iter3);
+        console.log(arr2);
+
+        function iter4(total,value,index,array)
+        {
+            total = total + value;
+            return total
+        }
+
+        arr3 = arr.reduce(iter4);
+        console.log(arr3);
+
+
+    </script>
+</body>
+</html>
